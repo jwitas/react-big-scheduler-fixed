@@ -59,7 +59,7 @@ class EventItem extends Component {
         this.subscribeResizeEvent(np);
     }
 
-    componentDidMount() {
+    UNSAFE_componentDidMount() {
         this.subscribeResizeEvent(this.props);
     }
 

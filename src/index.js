@@ -326,8 +326,8 @@ class Scheduler extends Component {
 
     resolveScrollbarSize = () => {
         const { schedulerData } = this.props;
-        let contentScrollbarHeight = 17, 
-            contentScrollbarWidth = 17, 
+        let contentScrollbarHeight = 17,
+            contentScrollbarWidth = 17,
             resourceScrollbarHeight = 17,
             resourceScrollbarWidth = 17,
             contentHeight = schedulerData.getSchedulerContentDesiredHeight();
@@ -444,10 +444,10 @@ class Scheduler extends Component {
                 onScrollBottom(schedulerData, this.schedulerContent, this.schedulerContent.scrollHeight - this.schedulerContent.clientHeight);
             }
         }
-        this.setState({
-            scrollLeft: this.schedulerContent.scrollLeft,
-            scrollTop: this.schedulerContent.scrollTop
-        });
+        // this.setState({
+        //     scrollLeft: this.schedulerContent.scrollLeft,
+        //     scrollTop: this.schedulerContent.scrollTop
+        // });
     }
 
     onViewChange = (e) => {

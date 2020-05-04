@@ -1,6 +1,6 @@
 {
-  "name": "react-big-scheduler",
-  "version": "0.2.7",
+  "name": "@jwitas/react-big-scheduler",
+  "version": "0.2.8",
   "description": "A scheduler and resource planning component built for React and made for modern browsers (IE10+)",
   "keywords": [
     "scheduler",
