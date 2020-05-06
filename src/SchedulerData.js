@@ -494,13 +494,12 @@ export default class SchedulerData {
                 oldStart = this.localeMoment(item.start),
                 oldEnd = this.localeMoment(item.end),
                 rule = rrulestr(item.rrule),
-                oldDtstart = undefined,
-                oldUntil = rule.origOptions.until || windowEnd.toDate();
+                oldDtstart = undefined;
             if(!!rule.origOptions.dtstart) {
                 oldDtstart = this.localeMoment(rule.origOptions.dtstart);
             }
-            //rule.origOptions.dtstart = oldStart.toDate();
-            if(windowEnd < oldUntil) {
+            rule.origOptions.dtstart = oldStart.toDate();
+            if(!rule.origOptions.until || windowEnd < this.localeMoment(rule.origOptions.until)) {
                 rule.origOptions.until = windowEnd.toDate();
             }
                 
