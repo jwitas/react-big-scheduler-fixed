@@ -43,7 +43,7 @@
   "dependencies": {
     "antd": "^3.16.6",
     "cpy": "^3.4.1",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dnd": "^7.5.0",
